@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Options Page :: Kokoro TTS Engine</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div>
+    <label for="device">Device</label>
+    <select id="device">
+      <option value="wasm">Wasm</option>
+      <option value="webgpu">WebGPU</option>
+      <option value="cpu">CPU</option>
+    </select>
+    <label for="dtype">Data Type</label>
+    <select id=dtype>
+      <option value="q4">q4</option>
+      <option value="q8">q8</option>
+      <option value="q4f16">q4f16</option>
+      <option value="fp16">fp16</option>
+      <option value="fp32">fp32</option>
+    </select>
+  </div>
+  <hr>
+  <p>"Factory Reset" clears all stored data. New training data will be downloaded according to your updated settings after the first use.</p>
+  <p>
+    <input type="button" id="test" value="Test Engine">
+    <input type="button" id="reset" value="Factory Reset">
+    <span id="toast"></span>
+  </p>
+  <p>
+    <input type="button" id="support" value="Support Development">
+    <input type="button" id="save" value="Save Options">
+  </p>
+  <script src="index.js"></script>
+</body>
+</html>

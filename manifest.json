@@ -1,0 +1,169 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Kokoro TTS Engine",
+  "description": "Privacy-friendly, offline, 82M param, open-weight text-to-speech (TTS) engine",
+  "permissions": ["ttsEngine", "offscreen", "storage", "unlimitedStorage"],
+  "icons": {
+    "16": "/data/icons/16.png",
+    "32": "/data/icons/32.png",
+    "48": "/data/icons/48.png",
+    "64": "/data/icons/64.png",
+    "128": "/data/icons/128.png",
+    "256": "/data/icons/256.png",
+    "512": "/data/icons/512.png"
+  },
+  "offline_enabled": true,
+  "tts_engine": {
+    "voices": [{
+        "voice_name": "Kokoro Heart",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Alloy",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Aoede",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Bella",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Jessica",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Kore",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Nicole",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Nova",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro River",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Sarah",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Sky",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Adam",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Echo",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Eric",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Fenrir",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Liam",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Michael",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Onyx",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Puck",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Santa",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Emma",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Isabella",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro George",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Lewis",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Alice",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Lily",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Daniel",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      },
+      {
+        "voice_name": "Kokoro Fable",
+        "lang": "en-US",
+        "event_types": ["start", "sentence", "error", "end"]
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "options_ui": {
+    "page": "data/options/index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self';"
+  }
+}

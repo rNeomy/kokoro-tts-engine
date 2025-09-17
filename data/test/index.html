@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Test Page :: Kokoro TTS Engine</title>
+</head>
+<body>
+  <h1>Speech synthesizer Test Page</h1>
+  <p>Enter some text in the input below and press return to hear it. Change voices using the drop-down menu.</p>
+  <form>
+    <textarea rows=10 class="txt">Life is like a box of chocolates. You never know what you're gonna get.</textarea>
+    <div class="configs">
+      <div class="box">
+        <label for="rate">Rate</label>
+        <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate"/>
+        <div class="rate-value">1</div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="box">
+        <label for="pitch">Pitch</label>
+        <input type="range" min="0" max="2" value="1" step="0.1" id="pitch"/>
+        <div class="pitch-value">1</div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <select></select>
+
+    <input type="submit" value="Play">
+    <input type="button" value="Stop" id="stop">
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
